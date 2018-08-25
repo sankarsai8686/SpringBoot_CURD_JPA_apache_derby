@@ -20,7 +20,7 @@ public class Ticket
 	@Column(name="ticket_id")
 	private Integer ticketId;
 	
-	@Column(name="passanger_name",nullable=false)
+	@Column(name="passenger_name",nullable=false)
 	private String passengerName;
 	
 	@Temporal(TemporalType.DATE)// with using  "bookingDate": 1535169502608,, with use"bookingDate": "2018-08-25",

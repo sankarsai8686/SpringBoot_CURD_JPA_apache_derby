@@ -2,6 +2,8 @@ package com.SpringBoot;
 
 import java.util.Date;
 
+import javax.sql.DataSource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -16,11 +18,14 @@ import com.SpringBoot.Services.TicketBookingServices;
 /*@Configuration*/
 @SpringBootApplication
 /*@ComponentScan(basePackages ={"com.SpringBoot","com.SpringBoot.Services"})*/
-public class SpringBootCurdRestJpaApplication implements CommandLineRunner
+public class SpringBootCurdRestJpaApplication /*implements CommandLineRunner*/
 {
 
-	@Autowired
+	/*@Autowired
 	private TicketBookingServices ticketBookingServices;
+	
+	@Autowired
+	private DataSource dataSource;*/
 	
 	public static void main(String[] args) {
 		/*ConfigurableApplicationContext applicationContext =*/ 
@@ -36,7 +41,7 @@ public class SpringBootCurdRestJpaApplication implements CommandLineRunner
 		
 
 	}
-	@Override
+	/*@Override
 	public void run(String... arg0) throws Exception {
 		Ticket ticket = new Ticket();
 		ticket.setBookingDate(new Date());
@@ -45,6 +50,7 @@ public class SpringBootCurdRestJpaApplication implements CommandLineRunner
 		ticket.setSourceStation("renigunta");
 		ticket.setEmail("sai@gmail.com");
 		ticketBookingServices.createTicket(ticket);
+		System.out.println("DataSource : "+dataSource);
 		
-	}
+	}*/
 }

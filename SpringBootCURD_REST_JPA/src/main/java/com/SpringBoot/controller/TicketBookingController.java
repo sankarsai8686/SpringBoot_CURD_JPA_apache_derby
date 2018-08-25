@@ -21,7 +21,7 @@ public class TicketBookingController {
 	@Autowired
 	TicketBookingServices ticketBookingService;
 						  
-	@PostMapping(value="/createticket")
+	@PostMapping(value="/ticket/createticket")
 	public Ticket createTicket(@RequestBody Ticket ticket)
 	{
 		return ticketBookingService.createTicket(ticket);
