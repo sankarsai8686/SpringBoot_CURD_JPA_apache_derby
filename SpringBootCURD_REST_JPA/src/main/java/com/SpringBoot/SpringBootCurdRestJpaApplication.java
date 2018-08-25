@@ -27,6 +27,7 @@ public class SpringBootCurdRestJpaApplication implements CommandLineRunner
 		
 		SpringApplication.run(SpringBootCurdRestJpaApplication.class, args);
 	
+		
 	
 	/*	Exception in thread "main" org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named
 		check Service class name ticketBookingService I changed ticketBookingServices*/
